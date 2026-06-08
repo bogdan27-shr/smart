@@ -1,0 +1,122 @@
+@media (max-width: 390px) {
+  .header{
+    max-width: 100vw !important;
+  }
+  .infoHeader{
+    padding: 28px 20px !important;
+  }
+  .topName{
+    width: 152px;
+    height: 18px;
+  }
+  .contacts{
+    right: 20px;
+  }
+  .phoneIcon {
+    width: 24px;
+    height: 24px;
+    margin-top: -5px;
+  }
+  .topMenu{
+    width: 24px;
+    height: 24px;
+  }
+  .slogan h2{
+    font-size: 36px;
+    display: inline-block;
+  }
+  .slogan{
+    margin-top: 561px !important;
+    width: auto !important;
+    display: inline-block;
+  }
+  .headerMenu{
+    padding: 20px !important;
+  }
+  .sectTopMenu{
+    margin-left: 20px;
+    margin-top: 32px;
+  }
+  .products{
+    padding: 64px 20px 96px;
+    max-width: 100vw !important;
+  }
+  .productRecomended h3{
+    font-size: 32px;
+  }
+  .cardsProd{
+    margin-top: 48px;
+  }
+  .card{
+    margin-top: 0;
+    margin-bottom: 40px;
+    min-height: auto;
+  }
+  .card img{
+    height: 280px;
+  }
+  .cardsProd .card:last-child{
+    margin-bottom: 0px;
+  }
+  .someProd h3{
+    font-size: 32px;
+  }
+  .someProd{
+    width: 70%;
+    margin-top: 96px;
+  }
+  .showProd{
+    margin-top: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .itemProd h4{
+    font-size: 18px;
+  }
+  .someProd + .showProd{
+    margin-top: 47px;
+  }
+  #vievAll{
+    margin-top: 40px;
+  }
+  .imgFooter{
+    height: 200px;
+    background-size: cover;
+  }
+  .congrFooter{
+    padding: 48px 20px;
+    height: auto;
+  }
+  .congrTitle{
+    height: 94px;
+  }
+  .congrTxt{
+    height: 176px;
+  }
+  .congratulation{
+    gap: 24px;
+  }
+  .congrTitle h4{
+    font-size: 32px;
+  }
+  .formFooter{
+    padding: 64px 20px;
+  }
+  .formFooter h4{
+    font-family: 32px;
+  }
+  .contForForm{
+    margin-top: 48px;
+    gap: 48px;
+  }
+  /*.topName{
+    top: 28px;
+  }
+  #closeMenu{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 20px;
+    top: 22px;
+  }*/
+}

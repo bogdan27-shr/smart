@@ -1,0 +1,12 @@
+@media (max-width: 640px) {
+  .phoneNumber.activeNumber span, .phoneNumber.notActive span{
+    font-size: 10px;
+  }
+  .infoHeader{
+    display: flex;
+    justify-content: space-between;
+  }
+  .contacts, .phone{
+    width: auto !important;
+  }
+}

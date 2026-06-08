@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'manropeBold';
+  src: url(../../fonts/manrope/static/Manrope-Bold.ttf);
+}
+@font-face {
+  font-family: 'manropeRegular';
+  src: url(../../fonts/manrope/static/Manrope-Regular.ttf);
+}
+.imgFooter{
+  width: 1260px;
+  height: 460px;
+  background-image: url(../../img/footerImg.png);
+  background-position-y: center;
+}
+.congrFooter{
+  width: 1260px;
+  height: 350px;
+  background-color: #FCFAEF;
+}
+.congrTitle{
+  width: 498px;
+  height: 96px;
+}
+.congrTitle h4{
+  margin: 0;
+  font-size: 48px;
+  letter-spacing: 0px;
+  line-height: 48px;
+  color: #1B2129;
+  font-family: 'manropeBold';
+}
+.congrTxt{
+  width: 411px;
+  height: 110px;
+}
+.congrTxt p{
+  margin: 0;
+  font-family: 'manropeRegular';
+  font-size: 16px;
+  color: #1B2129;
+  letter-spacing: 0.15px;
+  line-height: 140%;
+}
+.formFooter{
+  background-color: #FFFFFF;
+}
+.formFooter h4{
+  margin: 0;
+  font-size: 48px;
+  font-family: 'manropeBold';
+  color: #1B2129;
+  line-height: 48px;
+  letter-spacing: 0px;
+}
+
+.inputsForm input{
+  width: 100%;
+  background-color: #F9F9F9;
+  padding: 14px 16px;
+  border-radius: 8px;
+  font-family: 'manropeRegular';
+  font-size: 14px;
+  letter-spacing: 0.15px;
+  line-height: 140%;
+  color: #7E7E83;
+}
+#userName{
+  height: 48px;
+}
+#userEmail{
+  height: 48px;
+}
+#userMessage{
+  resize: none;
+  height: 148px;
+  width: 100%;
+  background-color: #F9F9F9;
+  padding: 14px 16px;
+  border-radius: 8px;
+  font-family: 'manropeRegular';
+  font-size: 14px;
+  letter-spacing: 0.15px;
+  line-height: 140%;
+  color: #7E7E83;
+}
+#btnSend{
+  width: 100%;
+  background-color: #1B2129;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family: 'manropeBold';
+  line-height: 27px;
+  letter-spacing: 0px;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+.unInf{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.nameValue{
+  font-size: 14px;
+  font-family: 'manropeRegular';
+  color: #9393A3;
+  margin: 0;
+  letter-spacing: 0.15px;
+  line-height: 140%;
+}
+.value{
+  font-size: 16px;
+  font-family: 'manropeRegular';
+  letter-spacing: 0.15px;
+  margin: 0;
+  color: #191919;
+  line-height: 140%;
+}

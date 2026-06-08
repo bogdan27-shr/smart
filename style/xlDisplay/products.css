@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'manropeBold';
+  src: url(../../fonts/manrope/static/Manrope-Bold.ttf);
+}
+@font-face {
+  font-family: 'manropeRegual';
+  src: url(../../fonts/manrope/static/Manrope-Regular.ttf);
+}
+.products{
+  padding: 120px;
+  width: 1260px;
+  background-color: #FFFFFF;
+}
+.productRecomended h3{
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: #1B2129;
+  margin: 0;
+  text-transform: capitalize;
+  font-family: 'manropeBold';
+}
+.cardsProd{
+  background-color: #FFFFFF;
+}
+.card a, .nameProd a{
+  text-decoration: none;
+}
+.nameProd{
+  display: inline-block;
+}
+.nameProd h4{
+  font-size: 18px;
+  color: #1B2129;
+  letter-spacing: 0px;
+  margin: 0;
+  font-family: 'manropeBold';
+}
+.descProd p{
+  font-size: 16px;
+  letter-spacing: 0.15px;
+  line-height: 140%;
+  font-family: 'manropeRegual';
+}
+.priceProd span{
+  font-family: 'manropeBold';
+  letter-spacing: 0px;
+  line-height: 140%;
+  color: #1B2129;
+  font-size: 16px;
+}
+.someProd{
+  width: 388px;
+}
+.someProd h3{
+  margin: 0;
+  font-size: 48px;
+  font-family: 'manropeBold';
+  letter-spacing: 0px;
+  line-height: 48px;
+}
+
+.card img:hover{
+  cursor: pointer;
+}
+.nameProd h4:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.unitProd{
+  transition: all 100ms linear;
+}
+.unitProd:hover{
+  transform: scale(1.007);
+}
+
+.itemProd h4{
+  font-family: 'manropeBold';
+  color: #1B2129;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: 0px;
+}
+
+#vievAll{
+  width: 324px;
+  height: 56px;
+  background-color: #F98921;
+  font-size: 16px;
+  font-family: 'manropeBold';
+  letter-spacing: 0px;
+  line-height: 27px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
