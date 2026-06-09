@@ -32,7 +32,7 @@ body {
 .all {
   width: 100%;
   min-height: 100vh;
-  /**/background-color: var(--bgColor);
+  background-color: var(--bgColor);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -47,8 +47,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /*background-size: 101%;
-  background-position: -4px -4px;*/
   position: relative;
 }
 .infoHeader {

@@ -13,7 +13,7 @@
     gap: 0;
   }
   .card{
-    width: 100%;
+    min-width: 100%;
     min-height: 757px;
   }
   .card img{
@@ -41,7 +41,11 @@
   .formFooter h4{
     font-size: 40px;
   }
-  .grid-cols-2{
+  .showProd{
+    gap: 24px;
+  }
+
+  .contForForm{
     grid-template-columns: 1fr;
     gap: 80px;
   }
@@ -68,5 +72,35 @@
   }
   .contactInfo a{
     font-size: 16px;
+  }
+}
+@media (max-width: 730px) {
+  .imgFooter{
+    height: 400px;
+    background-size: cover;
+  }
+}
+@media (max-width: 680px) {
+  .congrFooter{
+    padding: 72px;
+  }
+}
+@media (max-width: 620px) {
+  .congratulation{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+  }
+  .congrFooter{
+    padding: 48px 20px;
+    height: auto;
+  }
+  .congrTxt{
+    height: auto;
+  }
+  .products{
+    padding: 72px 20px;
+  }
+  .imgFooter{
+    height: 300px;
   }
 }
