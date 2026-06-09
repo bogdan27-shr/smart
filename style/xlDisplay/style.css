@@ -7,6 +7,8 @@
 @import url(../../style/smDisplay/style.css);
 @import url(../../style/xsDisplay/style.css);
 
+@import url(../../style/xlDisplay/modaleWin.css);
+
 @font-face {
   font-family: 'inter';
   src: url(../../fonts/inter/Inter-VariableFont_opsz\,wght.ttf);

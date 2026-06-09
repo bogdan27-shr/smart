@@ -10,3 +10,8 @@
     width: auto !important;
   }
 }
+@media (max-width: 515px) {
+  .modal span{
+    font-size: 13px;
+  }
+}
