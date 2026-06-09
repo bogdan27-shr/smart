@@ -92,8 +92,8 @@ window.addEventListener(`DOMContentLoaded`, () => {
           setTimeout(() => {
             modalDiv.classList.remove(`ok`);
             modalDiv.classList.remove(`delete`);
-          }, 5100);
-        }, 5000);
+          }, 7001);
+        }, 7000);
       }, 10);
     }else{
       let form = document.querySelector(`.contForForm .form`);
@@ -108,8 +108,8 @@ window.addEventListener(`DOMContentLoaded`, () => {
           setTimeout(() => {
             modalDiv.classList.remove(`error`);
             modalDiv.classList.remove(`delete`);
-          }, 5100);
-        }, 5000);
+          }, 7001);
+        }, 7000);
       }, 10);
     }
   });
