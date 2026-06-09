@@ -26,9 +26,6 @@ function createTags(
     return tag;
   }
 }
-let modalDiv = createTags(`div`, `modal`);
-let modalSpan = createTags(`span`);
-modalDiv.append(modalSpan);
 
 window.addEventListener(`DOMContentLoaded`, () => {
   const contacts = document.querySelector(`.contacts`);
@@ -72,45 +69,57 @@ window.addEventListener(`DOMContentLoaded`, () => {
   });
 
   const btnUser = document.querySelector(`#btnSend`);
+  let btnMode = `none`;
   btnUser.addEventListener(`click`, (e) => {
-    const validName = /[а-я a-z]{2,15}/i;
-    const validEmail = /^[a-z]{2,15}@[a-z]{2,8}\.[a-z]{2,8}(\.[a-z]{2,8})?$/i;
+    let modalDiv = createTags(`div`, `modal`);
+    let modalSpan = createTags(`span`);
+    modalDiv.append(modalSpan);
+    
+    if(btnMode === `none`){
+      btnMode = `click`;
+      const validName = /[а-я a-z]{2,15}/i;
+      const validEmail = /^[a-z]{2,15}@[a-z]{2,8}\.[a-z]{2,8}(\.[a-z]{2,8})?$/i;
+      let userName = document.querySelector(`#userName`);
+      let userEmail = document.querySelector(`#userEmail`);
 
-    let userName = document.querySelector(`#userName`);
-    let userEmail = document.querySelector(`#userEmail`);
-    let userMesagge = document.querySelector(`#userMessage`);
-    if(validName.test(userName.value) && validEmail.test(userEmail.value)){
-      let form = document.querySelector(`.contForForm .form`);
-
-      modalSpan.textContent = `The data has been sent`;
-      form.prepend(modalDiv);
-      setTimeout(() => {
-        modalDiv.classList.add(`ok`);
+      let userMesagge = document.querySelector(`#userMessage`);
+      if(validName.test(userName.value) && validEmail.test(userEmail.value)){
+        let form = document.querySelector(`.contForForm .form`);
+  
+        modalSpan.textContent = `The data has been sent`;
+        form.prepend(modalDiv);
         setTimeout(() => {
-          modalDiv.classList.add(`delete`);
-          modalDiv.remove();
+          modalDiv.classList.add(`ok`);
           setTimeout(() => {
-            modalDiv.classList.remove(`ok`);
-            modalDiv.classList.remove(`delete`);
-          }, 7001);
-        }, 7000);
-      }, 10);
+            modalDiv.classList.add(`delete`);
+            setTimeout(() => {
+              modalDiv.classList.remove(`ok`);
+              modalDiv.classList.remove(`delete`);
+              modalDiv.remove();
+              btnMode = `none`;
+            }, 510);
+          }, 7000);
+        }, 10);
+      }else{
+        let form = document.querySelector(`.contForForm .form`);
+  
+        modalSpan.textContent = `Contacts are incorrect`;
+        form.prepend(modalDiv);
+        setTimeout(() => {
+          modalDiv.classList.add(`error`);
+          setTimeout(() => {
+            modalDiv.classList.add(`delete`);
+            setTimeout(() => {
+              modalDiv.classList.remove(`error`);
+              modalDiv.classList.remove(`delete`);
+              modalDiv.remove();
+              btnMode = `none`;
+            }, 510);
+          }, 7000);
+        }, 10);
+      }
     }else{
-      let form = document.querySelector(`.contForForm .form`);
-
-      modalSpan.textContent = `Contacts are incorrect`;
-      form.prepend(modalDiv);
-      setTimeout(() => {
-        modalDiv.classList.add(`error`);
-        setTimeout(() => {
-          modalDiv.classList.add(`delete`);
-          modalDiv.remove();
-          setTimeout(() => {
-            modalDiv.classList.remove(`error`);
-            modalDiv.classList.remove(`delete`);
-          }, 7001);
-        }, 7000);
-      }, 10);
+      return;
     }
   });
 });
