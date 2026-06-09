@@ -94,7 +94,7 @@ window.addEventListener(`DOMContentLoaded`, () => {
             modalDiv.classList.remove(`delete`);
           }, 5100);
         }, 5000);
-      }, 1);
+      }, 10);
     }else{
       let form = document.querySelector(`.contForForm .form`);
 
@@ -108,9 +108,9 @@ window.addEventListener(`DOMContentLoaded`, () => {
           setTimeout(() => {
             modalDiv.classList.remove(`error`);
             modalDiv.classList.remove(`delete`);
-          }, 2100);
-        }, 2000);
-      }, 1);
+          }, 5100);
+        }, 5000);
+      }, 10);
     }
   });
 });
