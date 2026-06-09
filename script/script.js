@@ -92,8 +92,8 @@ window.addEventListener(`DOMContentLoaded`, () => {
           setTimeout(() => {
             modalDiv.classList.remove(`ok`);
             modalDiv.classList.remove(`delete`);
-          }, 2100);
-        }, 2000);
+          }, 5100);
+        }, 5000);
       }, 1);
     }else{
       let form = document.querySelector(`.contForForm .form`);
