@@ -1,6 +1,6 @@
 @media (max-width: 1290px) {
   .header{
-    max-width: 100vw;
+    max-width: 98.3vw;
   }
   .slogan{
     width: 100%;
@@ -46,6 +46,51 @@
   }
   .card{
     max-width: calc((100% - 10px) / 3);
+  }
+}
+@media (max-width: 1152px) {
+  .header{
+    max-width: 98.2vw;
+  }
+}
+@media (max-width: 1088px) {
+  .header{
+    max-width: 98.1vw;
+  }
+}
+@media (max-width: 1030px) {
+  .header{
+    max-width: 98vw;
+  }
+}
+@media (max-width: 978px) {
+  .header{
+    max-width: 97.9vw;
+  }
+}
+@media (max-width: 932px) {
+  .header{
+    max-width: 97.8vw;
+  }
+}
+@media (max-width: 890px) {
+  .header{
+    max-width: 97.7vw;
+  }
+}
+@media (max-width: 852px) {
+  .header{
+    max-width: 97.6vw;
+  }
+}
+@media (max-width: 816px) {
+  .header{
+    max-width: 97.5vw;
+  }
+}
+@media (max-width: 783px) {
+  .header{
+    max-width: 97.4vw;
   }
 }
 @media (max-width: 1060px) {
